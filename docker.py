@@ -32,7 +32,25 @@ while True:
         input('Press enter to continue')
         os.system("clear")
     elif choice == 3:
-        os.system("docker-compose up -d")
+        while True:
+            os.system("clear")
+            print("\n\nif you don't have wordpress and mysql image then follow these steps:\n\n")
+            print("\n\t\tpress 1: for wordpress image ")
+            print("\t\tpress 2: for mysql image")
+            print("\n\n\tif you already have these images then follow to launch wordress ")
+            print("\n\t\tpress 3: for launch wordpress server\n\n\n")
+            print("\n\n\tpress 0: Back to main menu")
+            choice1 = int(input("Enter your choice : "))
+            if choice1 == 1:
+                os.system("docker pull wordpress:5.1.1-php7.3-apache")
+            elif choice1 == 2:
+                os.system("docker pull mysql:5.1")
+            elif choice1 == 3:
+                os.system("docker-compose up -d")
+            elif choice1 == 0:
+                exit(1)
+            else:
+                print("oops wrong input try again.....................")
         input('Press enter to continue')
         os.system("clear")
     elif choice == 4:
