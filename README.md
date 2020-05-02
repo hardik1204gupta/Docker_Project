@@ -7,7 +7,6 @@ Requirements for the project are:
 -- os must be redhat linux
 -- python3 should be installed
 -- yum repository must be configured
--- mysql must be installed with port 8081:80
 
 Steps to execute the project:
 
