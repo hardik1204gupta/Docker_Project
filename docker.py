@@ -15,7 +15,7 @@ while True:
                Press 4: To see the docker images present in your docker.
                Press 5: To pull the image of fedora
                Press 6: To launch fedora with interactive terminal
-               Press 7: To see the all commands in docker
+               Press 7: To see all commands available for docker
                Press 0: EXIT
                
     """)
